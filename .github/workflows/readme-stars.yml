@@ -4,6 +4,11 @@ on:
     # !Please set a different minute than 51 if you enable this!
     # schedule:
     #     - cron: "51 */6 * * *" # Every 6 hours
+    push:
+        paths:
+            - 'src/bin/**'
+            - 'README.md'
+            - '.github/workflows/readme-stars.yml'
     workflow_dispatch:
 
 jobs:
